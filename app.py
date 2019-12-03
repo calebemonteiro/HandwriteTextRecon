@@ -12,7 +12,7 @@ from flask import Flask, request, jsonify
 #
 app = Flask(__name__)
 #
-#https://modeldepot.io/afowler/sentiment-neuron
+#https://towardsdatascience.com/build-a-handwritten-text-recognition-system-using-tensorflow-2326a3487cd5
 model = Model(open('model/charList.txt').read(), 1, mustRestore=True, dump=False)
 #
 @app.route('/')
